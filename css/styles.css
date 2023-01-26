@@ -5,19 +5,28 @@
 html,
 body {
   position: relative;
+  font-family: sans-serif;
 }
 
 body {
   overflow-y: auto;
   min-height: 100vh;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
 }
 a {
   color: inherit !important;
-  text-decoration: none !important;
+  text-decoration: none !important; 
+}
+.hero-input{
+  width: 80%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
 }
 footer {
   background: #f1f1f1;
@@ -73,25 +82,15 @@ footer {
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+    url("/workspace/seikhabubakar47-ME_QTRIPSTATIC/assets/hero.jpg");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
 }
-
-.hero-subheading {
-  font-size: 24px;
-  font-weight: 100;
-}
-.hero-input {
-  width: 80%;
-  height: 50px;
-  padding: 16px;
-  border-radius: 8px;
-  border: none;
-}
-
 .nav-link {
   margin-right: 36px;
 }
